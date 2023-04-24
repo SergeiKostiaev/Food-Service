@@ -1,0 +1,409 @@
+@charset "UTF-8";
+/*Fonts connect - food service*/
+@font-face {
+  font-family: "Muller Black";
+  src: url(/fonts/MullerBlack.ttf);
+}
+@font-face {
+  font-family: "Muller BlackItalic";
+  src: url(/fonts/MullerBlackItalic.ttf);
+}
+@font-face {
+  font-family: "Muller Bold";
+  src: url(/fonts/MullerBold.ttf);
+}
+@font-face {
+  font-family: "Muller BoldItalic";
+  src: url(/fonts/MullerBoldItalic.ttf);
+}
+@font-face {
+  font-family: "Muller Regular";
+  src: url(/fonts/MullerRegular.ttf);
+}
+@font-face {
+  font-family: "Muller BoldItalic";
+  src: url(/fonts/MullerBoldItalic.ttf);
+}
+@font-face {
+  font-family: "Muller Hairline";
+  src: url(/fonts/MullerHairline.ttf);
+}
+@font-face {
+  font-family: "Muller Light";
+  src: url(/fonts/MullerLight.ttf);
+}
+/*KeyFrames - food service*/
+@keyframes slow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Color - food service*/
+/*Pre settings - food service*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Muller";
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.content {
+  padding: 0px calc((100% - 1140px) / 2) 0;
+}
+
+/*Header - food service*/
+header > .content {
+  padding: 5px calc((100% - 1140px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header > .content p {
+  font-family: "Muller Light";
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+header > .content .tel {
+  color: rgb(0, 0, 0);
+  font-family: "Muller Light";
+  font-weight: 600;
+  font-size: 20px;
+}
+header > .content .tel:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+}
+
+aside {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.header_two > .content {
+  position: absolute;
+  width: 100%;
+  padding: 0px calc((100% - 1140px) / 2) 0;
+}
+.header_two > .content .header_two_nav {
+  width: 100%;
+  font-family: "Muller Light";
+}
+.header_two > .content .header_two_nav #nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+.header_two > .content .header_two_nav #nav .nav_item > span > svg > path {
+  width: 20px;
+}
+.header_two > .content .header_two_nav #nav .nav_item > span > svg > path:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+  fill: rgb(255, 105, 87);
+}
+.header_two > .content .header_two_nav #nav a {
+  color: rgb(255, 255, 255);
+}
+.header_two > .content .header_two_nav #nav a:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+}
+
+/*Main - food service*/
+main {
+  display: block;
+  width: 100%;
+  /*Чтобы изображение оставалось на месте делать его через background*/
+}
+main .main_section {
+  display: block;
+  background-color: black;
+  text-align: center;
+  background-image: url(../images/fon\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .main_section .title_form {
+  text-align: start;
+}
+main .main_section .title_form h1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 300px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+main .main_section .title_form .title_after {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-top: 25px;
+}
+main .main_section .title_form .form_name_tel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+main .main_section .title_form .form_name_tel .nameInpt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  color: rgb(255, 255, 255);
+}
+main .main_section .title_form .form_name_tel .nameInpt input {
+  background: none;
+  border: none;
+  min-width: 230px;
+  max-width: 250px;
+  height: 50px;
+  background: #000;
+  border: 1px solid #fff;
+  padding: 0px 17px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+main .main_section .title_form .form_name_tel .nameInpt input:focus {
+  outline: none;
+}
+main .main_section .title_form .form_name_tel .nameInpt .not_name {
+  display: none;
+  position: absolute;
+  top: 110%;
+  color: red;
+}
+main .main_section .title_form .form_name_tel button {
+  color: #ff6957;
+  border: 3px solid #ff6957;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  width: 200px;
+  height: 50px;
+  padding: 0 15px;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+main .main_section .title_form .form_action > .agreement {
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 93px;
+  align-items: center;
+}
+main .main_section .title_form .form_action > .agreement p {
+  color: rgb(255, 255, 255);
+}
+main .main_section .title_form .form_action > .agreement p span {
+  border-bottom: 1px dashed rgb(255, 255, 255);
+  cursor: pointer;
+}
+main .main_section .title_form .form_action > .agreement input {
+  margin-right: 8px;
+  cursor: pointer;
+}
+main .main_section .content {
+  padding: 0px calc((100% - 1140px) / 2) 0;
+}
+main .title_next_block {
+  text-align: center;
+  margin-top: 20px;
+}
+main .title_next_block .next_block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 45px 0;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main .title_next_block .next_block::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 1px;
+  background-color: #000;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+main .title_next_block .next_block::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 1px;
+  background-color: #000;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+main .katering {
+  width: 100%;
+}
+main .katering .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+main .katering .wrapper .first {
+  position: relative;
+}
+main .katering .wrapper .first button {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1.5px solid #FFFFFF;
+  color: rgb(255, 255, 255);
+  padding: 11px 44px;
+}
+main .katering .wrapper .first button:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+  cursor: pointer;
+  border-color: rgb(255, 105, 87);
+}
+main .katering .wrapper .first > img {
+  width: 99%;
+}
+main .katering .wrapper .second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 548px;
+}
+main .katering .wrapper .second img {
+  width: 100%;
+}
+main .katering .wrapper .second .block_weeding {
+  position: relative;
+}
+main .katering .wrapper .second .block_weeding button {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1.5px solid #FFFFFF;
+  color: rgb(255, 255, 255);
+  padding: 11px 44px;
+}
+main .katering .wrapper .second .block_weeding button:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+  cursor: pointer;
+  border-color: rgb(255, 105, 87);
+}
+main .katering .wrapper .second .block_party {
+  position: relative;
+}
+main .katering .wrapper .second .block_party button {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1.5px solid #FFFFFF;
+  color: rgb(255, 255, 255);
+  padding: 11px 44px;
+}
+main .katering .wrapper .second .block_party button:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+  cursor: pointer;
+  border-color: rgb(255, 105, 87);
+}
+main .title_before_katering {
+  height: 80px;
+  text-align: center;
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .menu_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .menu_list img {
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .menu_list img:hover {
+  transform: scale(1.2);
+}
+main .menu_list .buffet, main .menu_list .kids, main .menu_list .bar {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+main .menu_list .buffet .back, main .menu_list .kids .back, main .menu_list .bar .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .menu_list .buffet p, main .menu_list .kids p, main .menu_list .bar p {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: 0.3s;
+}
+main .menu_list .buffet p:hover, main .menu_list .kids p:hover, main .menu_list .bar p:hover {
+  cursor: pointer;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .more {
+  display: block;
+  border: 3px solid #FD7043;
+  background: none;
+  padding: 20px 41px;
+  color: rgb(255, 105, 87);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+main .more:hover {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */
