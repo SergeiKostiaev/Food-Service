@@ -136,7 +136,7 @@ main .main_section {
   display: block;
   background-color: black;
   text-align: center;
-  background-image: url(../images/fon\ 1.jpg);
+  background-image: url(../images/fon1.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -211,12 +211,13 @@ main .main_section .title_form .form_action > .agreement {
   padding-bottom: 93px;
   align-items: center;
 }
-main .main_section .title_form .form_action > .agreement p {
+main .main_section .title_form .form_action > .agreement a {
   color: rgb(255, 255, 255);
-}
-main .main_section .title_form .form_action > .agreement p span {
   border-bottom: 1px dashed rgb(255, 255, 255);
   cursor: pointer;
+}
+main .main_section .title_form .form_action > .agreement p {
+  color: rgb(255, 255, 255);
 }
 main .main_section .title_form .form_action > .agreement input {
   margin-right: 8px;
@@ -406,4 +407,52 @@ main .more:hover {
   color: rgb(0, 0, 0);
   cursor: pointer;
   transition: 0.3s;
+}
+main .thrid_block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+main .thrid_block .wrap_left_part {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .thrid_block .left_part, main .thrid_block .left_part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .thrid_block .left_part .left_part2, main .thrid_block .left_part2 .left_part2 {
+  align-items: end;
+}
+main .thrid_block .left_part img, main .thrid_block .left_part2 img {
+  width: 95%;
+  min-width: 300px;
+}
+
+/*************************************/
+/*************************************/
+/*MAIN PRIVACY SECTION - FOOD SERVICE*/
+/*************************************/
+/*************************************/
+.main_privacy {
+  display: block;
+  width: 100%;
+}
+.main_privacy .main_privacy_section {
+  width: 100%;
+  background-image: url(/images/fon2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1140px;
+  height: 500px;
+}
+.main_privacy .title_privacy {
+  margin-top: 20px;
+}
+.main_privacy .title_privacy h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
