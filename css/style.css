@@ -550,6 +550,74 @@ main .thrid_block .left_part img, main .thrid_block .left_part2 img {
   min-width: 300px;
 }
 
+/*FOOTER - FOOD SERVICE*/
+.footer {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  align-items: center;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+.footer .footer_content {
+  padding: 0 calc((100% - 1140px) / 2) 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer .footer_content .block1_footer {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.footer .footer_content .block1_footer a {
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.footer .footer_content .block1_footer a:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+}
+.footer .footer_content .block1_footer img {
+  margin-bottom: 15px;
+}
+.footer .footer_content .block1_footer .city {
+  margin-top: 15px;
+}
+.footer .footer_content .block2_footer {
+  padding-top: 55px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.footer .footer_content .block2_footer .social {
+  margin-top: 15px;
+}
+.footer .footer_content .block3_footer {
+  text-align: end;
+  padding-top: 55px;
+  line-height: 1.2;
+}
+.footer .footer_content .block3_footer .agree2 {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer_content .block3_footer .agree2 {
+  margin-top: 15px;
+}
+.footer .footer_content .block3_footer .agree2 a {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  line-height: 1.2;
+}
+.footer .footer_content .block3_footer .agree2 a:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+}
+
 /*********************************************************************************************************************************************************/
 /*********************************************************************************************************************************************************/
 /*MAIN PRIVACY SECTION - FOOD SERVICE*********************************************************************************************************************/

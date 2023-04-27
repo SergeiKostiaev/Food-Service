@@ -544,6 +544,73 @@ main {
         }
     }
 }
+/*FOOTER - FOOD SERVICE*/
+.footer {
+    width: 100%;
+    background: $black;
+    color: $white;
+    align-items: center;
+    padding-top: 15px;
+    margin-top: 20px;
+    .footer_content {
+        padding: 0 calc((100% - 1140px)/2) 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        .block1_footer {
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            a {
+                line-height: 1.2;
+                color: $white;
+                cursor: pointer;
+                &:hover {
+                    color: $border;
+                    transition: all 0.4s;
+                }
+            }
+            img {
+                margin-bottom: 15px;
+            }
+            .city {
+                margin-top: 15px;
+            }
+        }
+        .block2_footer {
+            padding-top: 55px;
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            .social {
+                margin-top: 15px;
+            }
+        }
+        .block3_footer {
+            text-align: end;
+            padding-top: 55px;
+            line-height: 1.2;
+            .agree2 {
+                display: flex;
+                flex-direction: column;
+            }
+            .agree2 {
+                margin-top: 15px;
+                a {
+                    color: $white;
+                    cursor: pointer;
+                    line-height: 1.2;
+                    &:hover {
+                        color: $border;
+                        transition: all 0.4s;
+                    }
+                }
+            }
+        }
+    }
+}
 /*********************************************************************************************************************************************************/
 /*********************************************************************************************************************************************************/
 /*MAIN PRIVACY SECTION - FOOD SERVICE*********************************************************************************************************************/
