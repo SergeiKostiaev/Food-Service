@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*START PROJECT - FOOD SERVICE****************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
 /*Fonts connect - food service*/
 @font-face {
   font-family: "Muller Black";
@@ -36,6 +41,17 @@
 @keyframes slow {
   0% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slow_2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
@@ -109,14 +125,95 @@ aside {
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
+  /*Submenu*/
+  /*Submenu*/
 }
-.header_two > .content .header_two_nav #nav .nav_item > span > svg > path {
+.header_two > .content .header_two_nav #nav .nav_item > svg > path {
   width: 20px;
 }
-.header_two > .content .header_two_nav #nav .nav_item > span > svg > path:hover {
+.header_two > .content .header_two_nav #nav .nav_item > svg > path:hover {
   color: rgb(255, 105, 87);
   transition: all 0.4s;
   fill: rgb(255, 105, 87);
+}
+.header_two > .content .header_two_nav #nav .dropdown {
+  float: left;
+  overflow: hidden;
+}
+.header_two > .content .header_two_nav #nav .dropdown .nav_item {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.header_two > .content .header_two_nav #nav .dropdown .nav_item:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+  fill: rgb(255, 105, 87);
+  cursor: pointer;
+}
+.header_two > .content .header_two_nav #nav .dropdown-content {
+  content: " ";
+  display: none;
+  position: absolute;
+  background-color: rgba(22, 22, 22, 0.3882352941);
+  border-radius: 25px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  padding-top: 20px;
+  margin-left: -20px;
+  padding-top: 20px;
+}
+.header_two > .content .header_two_nav #nav .dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.header_two > .content .header_two_nav #nav .topnav a:hover, .header_two > .content .header_two_nav #nav .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+.header_two > .content .header_two_nav #nav .dropdown-content a:hover {
+  color: rgb(255, 105, 87);
+  transition: all 0.4s;
+  fill: rgb(255, 105, 87);
+  cursor: pointer;
+}
+.header_two > .content .header_two_nav #nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .header_two > .content .header_two_nav #nav .nav.responsive {
+    position: relative;
+  }
+  .header_two > .content .header_two_nav #nav .nav.responsive .icon {
+    position: absolute;
+    right: -15px;
+    top: 15px;
+  }
+  .header_two > .content .header_two_nav #nav .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header_two > .content .header_two_nav #nav .nav.responsive .dropdown {
+    float: none;
+  }
+  .header_two > .content .header_two_nav #nav .nav.responsive .dropdown-content {
+    position: relative;
+  }
+  .header_two > .content .header_two_nav #nav .nav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 .header_two > .content .header_two_nav #nav a {
   color: rgb(255, 255, 255);
@@ -126,7 +223,11 @@ aside {
   transition: all 0.4s;
 }
 
-/*Main - food service*/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*MAIN- FOOD SERVICE**************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
 main {
   display: block;
   width: 100%;
@@ -142,6 +243,11 @@ main .main_section {
 }
 main .main_section .title_form {
   text-align: start;
+}
+main .main_section .title_form .animation_fade {
+  animation-name: slow;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
 }
 main .main_section .title_form h1 {
   display: flex;
@@ -162,6 +268,9 @@ main .main_section .title_form .form_name_tel {
   flex-wrap: wrap;
   align-items: flex-end;
   margin-top: 30px;
+  animation-name: slow_2;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
 }
 main .main_section .title_form .form_name_tel .nameInpt {
   position: relative;
@@ -210,6 +319,9 @@ main .main_section .title_form .form_action > .agreement {
   margin-top: 30px;
   padding-bottom: 93px;
   align-items: center;
+  animation-name: slow_2;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
 }
 main .main_section .title_form .form_action > .agreement a {
   color: rgb(255, 255, 255);
@@ -272,16 +384,18 @@ main .katering .wrapper {
 main .katering .wrapper .first {
   position: relative;
 }
-main .katering .wrapper .first button {
+main .katering .wrapper .first a {
+  font-family: "Muller";
+  font-weight: 600;
   position: absolute;
-  left: 40%;
+  left: 35%;
   top: 45%;
   background: rgba(0, 0, 0, 0.7);
   border: 1.5px solid #FFFFFF;
   color: rgb(255, 255, 255);
   padding: 11px 44px;
 }
-main .katering .wrapper .first button:hover {
+main .katering .wrapper .first a:hover {
   color: rgb(255, 105, 87);
   transition: all 0.4s;
   cursor: pointer;
@@ -302,7 +416,9 @@ main .katering .wrapper .second img {
 main .katering .wrapper .second .block_weeding {
   position: relative;
 }
-main .katering .wrapper .second .block_weeding button {
+main .katering .wrapper .second .block_weeding a {
+  font-family: "Muller";
+  font-weight: 600;
   position: absolute;
   left: 30%;
   top: 40%;
@@ -311,7 +427,7 @@ main .katering .wrapper .second .block_weeding button {
   color: rgb(255, 255, 255);
   padding: 11px 44px;
 }
-main .katering .wrapper .second .block_weeding button:hover {
+main .katering .wrapper .second .block_weeding a:hover {
   color: rgb(255, 105, 87);
   transition: all 0.4s;
   cursor: pointer;
@@ -320,7 +436,9 @@ main .katering .wrapper .second .block_weeding button:hover {
 main .katering .wrapper .second .block_party {
   position: relative;
 }
-main .katering .wrapper .second .block_party button {
+main .katering .wrapper .second .block_party a {
+  font-family: "Muller";
+  font-weight: 600;
   position: absolute;
   left: 30%;
   top: 40%;
@@ -329,7 +447,7 @@ main .katering .wrapper .second .block_party button {
   color: rgb(255, 255, 255);
   padding: 11px 44px;
 }
-main .katering .wrapper .second .block_party button:hover {
+main .katering .wrapper .second .block_party a:hover {
   color: rgb(255, 105, 87);
   transition: all 0.4s;
   cursor: pointer;
@@ -432,11 +550,11 @@ main .thrid_block .left_part img, main .thrid_block .left_part2 img {
   min-width: 300px;
 }
 
-/*************************************/
-/*************************************/
-/*MAIN PRIVACY SECTION - FOOD SERVICE*/
-/*************************************/
-/*************************************/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*MAIN PRIVACY SECTION - FOOD SERVICE*********************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
 .main_privacy {
   display: block;
   width: 100%;

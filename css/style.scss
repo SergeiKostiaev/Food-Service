@@ -1,3 +1,8 @@
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*START PROJECT - FOOD SERVICE****************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
 /*Fonts connect - food service*/
 @font-face {
     font-family: 'Muller Black';
@@ -36,6 +41,11 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
   }
+@keyframes slow_2 {
+  0% {opacity: 0;}
+  50% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
 
 /*Color - food service*/
 $border: rgb(255, 105, 87);
@@ -64,6 +74,7 @@ a {
     padding: 0px calc((100% - 1140px)/2) 0;
 }
 /*Header - food service*/
+
 header>.content {
     padding: 5px calc((100% - 1140px)/2);
     display: flex;
@@ -104,7 +115,7 @@ aside {
             justify-content: space-between;
             background-color: $blackOp;
             padding: 20px;
-            .nav_item>span>svg>path {
+            .nav_item>svg>path {
                 width: 20px;
                 &:hover {
                     color: $border;
@@ -112,6 +123,89 @@ aside {
                     fill: $border;
                 }
             }
+            /*Submenu*/
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+            .dropdown .nav_item {
+                font-size: 17px;    
+                border: none;
+                outline: none;
+                color: white;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+                &:hover {
+                    color: $border;
+                    transition: all 0.4s;
+                    fill: $border;
+                    cursor: pointer;
+                }
+            }
+            .dropdown-content {
+                content: " ";
+                display: none;
+                position: absolute;
+                background-color: #16161663;
+                border-radius: 25px;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+                z-index: 1;
+                padding-top: 20px;
+                margin-left: -20px;
+                padding-top: 20px;
+            }
+            .dropdown-content a {
+                float: none;
+                color: $white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .topnav a:hover, .dropdown:hover .dropbtn {
+                background-color: #555;
+                color: white;
+              }
+              
+                .dropdown-content a:hover {
+                    color: $border;
+                    transition: all 0.4s;
+                    fill: $border;
+                    cursor: pointer;
+                }
+              
+              .dropdown:hover .dropdown-content {
+                  display: block;
+              }
+            @media screen and (max-width: 600px) {
+                .nav.responsive {
+                    position: relative;
+                }
+                .nav.responsive .icon {
+                  position: absolute;
+                  right: -15px;
+                  top: 15px;
+                }
+                .nav.responsive a {
+                  float: none;
+                  display: block;
+                  text-align: left;
+                }
+                .nav.responsive .dropdown {
+                    float: none;
+                }
+                .nav.responsive .dropdown-content {
+                    position: relative;
+                }
+                .nav.responsive .dropdown .dropbtn {
+                  display: block;
+                  width: 100%;
+                  text-align: left;
+                }
+              }
+             /*Submenu*/
             a {
                 color: $white;
                 &:hover {
@@ -122,7 +216,11 @@ aside {
         }
     }
 }
-/*Main - food service*/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*MAIN- FOOD SERVICE**************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
 main {
     display: block;
     width: 100%;
@@ -136,6 +234,11 @@ main {
         background-repeat: no-repeat;
         .title_form {
             text-align: start;
+            .animation_fade {
+                animation-name: slow;
+                animation-duration: 0.8s;
+                animation-timing-function: linear;
+            }    
             h1 {
                 display: flex;
                 flex-direction: column;
@@ -155,6 +258,9 @@ main {
                 flex-wrap: wrap;
                 align-items: flex-end;
                 margin-top: 30px;
+                animation-name: slow_2;
+                animation-duration: 0.8s;
+                animation-timing-function: linear;
                 .nameInpt {
                     position: relative;
                     display: flex;
@@ -204,6 +310,9 @@ main {
                 margin-top: 30px;
                 padding-bottom: 93px;
                 align-items: center;
+                animation-name: slow_2;
+                animation-duration: 0.8s;
+                animation-timing-function: linear;
                 a {
                     color: $white;
                     border-bottom: 1px dashed $white;
@@ -266,9 +375,11 @@ main {
             margin-top: 20px;
             .first {
                 position: relative;
-                button {
+                a {
+                    font-family: 'Muller';
+                    font-weight: 600;
                     position: absolute;
-                    left: 40%;
+                    left: 35%;
                     top: 45%;
                     background: rgba(0, 0, 0, 0.7);
                     border: 1.5px solid #FFFFFF;
@@ -295,7 +406,9 @@ main {
                 }
                 .block_weeding {
                     position: relative;
-                    button {
+                    a {
+                        font-family: 'Muller';
+                        font-weight: 600;
                         position: absolute;
                         left: 30%;
                         top: 40%;
@@ -313,7 +426,9 @@ main {
                 }
                 .block_party {
                     position: relative;
-                    button {
+                    a {
+                        font-family: 'Muller';
+                        font-weight: 600;
                         position: absolute;
                         left: 30%;
                         top: 40%;
@@ -429,11 +544,11 @@ main {
         }
     }
 }
-/*************************************/
-/*************************************/
-/*MAIN PRIVACY SECTION - FOOD SERVICE*/
-/*************************************/
-/*************************************/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*MAIN PRIVACY SECTION - FOOD SERVICE*********************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
 .main_privacy {
     display: block;
     width: 100%;

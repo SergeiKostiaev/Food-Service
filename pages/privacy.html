@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.scss">
     <link rel="stylesheet" href="../css/style.css">
     <title>FoodService</title>
@@ -23,24 +24,26 @@
     <aside class="header_two">
         <div class="content">
             <nav class="header_two_nav">
-                <ul id="nav">
-                    <a class="nav_link" href="#"><li class="nav_item">Кейтиринг
-                        <span>
-                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 6L0.669872 0L9.33013 0L5 6Z" fill="#D9D9D9"/>
-                            </svg>
-                        </span>
-                        <div class="dropdown">
-
-                        </div>
-                    </li></a>
+                <div class="nav" id="nav">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="nav_item">Кейтеринг
+                            <i class="fa fa-caret-down"></i>
+                        </button>
                         <!--SubMenu-->
-                    <a class="nav_link" href="#"><li class="nav_item">Доставка фуршета</li></a>
-                    <a class="nav_link" href="#"><li class="nav_item">Услуги</li></a>
-                    <a class="nav_link" href="#"><li class="nav_item">О проекте</li></a>
-                    <a class="nav_link" href="#"><li class="nav_item">Портфолио</li></a>
-                    <a class="nav_link" href="#"><li class="nav_item">Контакты</li></a>
-                </ul>
+                        <div class="dropdown-content">
+                            <a href="/pages/corp.html">Корпоративный <br>кейтеринг</a>
+                            <a href="/pages/weeding.html">Свадебный <br>кейтеринг</a>
+                            <a href="/pages/party.html">Событийный <br>кейтеринг</a>
+                        </div>
+                        <!--SubMenu-->
+                    </div>
+                        <!--SubMenu-->
+                    <a class="nav_link" href="#">Доставка фуршета</a>
+                    <a class="nav_link" href="#">Услуги</a>
+                    <a class="nav_link" href="#">О проекте</a>
+                    <a class="nav_link" href="#">Портфолио</a>
+                    <a class="nav_link" href="#">Контакты</a>
+                </div>
             </nav>
         </div>
     </aside>
