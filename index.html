@@ -46,7 +46,9 @@
             </nav>
         </div>
     </aside>
+    <!--main-->
     <main class="main">
+        <!--1 section-->
         <section class="main_section">
             <h2 hidden>main_block</h2>
             <div class="title_form content">
@@ -76,6 +78,7 @@
         <div class="title_next_block">
             <h2 class="next_block">Мы создаем современные и вкусные мероприятия с <span>красивой подачей и безупречной организацией</span></h2>
         </div>
+        <!--2 section-->
         <section class="katering content">
             <h2 hidden>katering_block</h2>
             <div class="wrapper">
@@ -100,7 +103,9 @@
             <h2>МЕНЮ FOOD SERVICE</h2>
             <p>В  готовят из свежих продуктов, поддерживают <br>философию здоровой еды и осознанного потребления</p>
         </div>
-        <article class="menu content">
+        <!--menu section-->
+        <section class="menu content">
+            <h2 hidden>menu</h2>
             <div class="menu_list">
                 <div class="buffet">
                     <div class="back">
@@ -122,10 +127,11 @@
                 </div>
             </div>
             <button class="more" type="submit">ВСЕ КАТЕГОРИИ</button>
-        </article>
+        </section>
         <div class="title_next_block">
             <h2 class="next_block">Осмысленный подход к каждой детали</h2>
         </div>
+        <!--3 section-->
         <section class="thrid_block content">
             <h2 hidden>thrid_block</h2>
             <div class="wrap_left_part">
@@ -142,7 +148,63 @@
             </div>
             <img src="images/large-205.jpg" alt="large">
         </section>
+        <!--4 section-->
+        <section class="call_back content">
+            <h2>ОБРАТНАЯ СВЯЗЬ</h2>
+            <p>В Food Service готовят из свежих продуктов, поддерживают <br>
+                философию здоровой еды и осознанного потребления</p>
+            <form action="" method="post" class="send_call_back">
+                <div class="name_email">
+                    <div class="wrapp_Box">
+                        <label for="nameBox">Ваше имя</label>
+                        <input type="text" name="nameBox" id="nameBox" placeholder="Имя">
+                    </div>
+                    <div class="wrapp_Box">
+                        <label for="emailBox">Ваше e-mail</label>
+                        <input type="email" name="emailBox" id="emailBox" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="tel_adress">
+                    <div class="wrapp_Box">
+                        <label for="telBox">Ваше Телефон</label>
+                        <input type="tel" name="telBox" id="telBox" placeholder="+7 (999) 999 99 99">
+                    </div>
+                    <div class="wrapp_Box">
+                        <label for="adressBox">Ваше адрес</label>
+                        <input type="text" name="adressBox" id="adressBox" placeholder="Адрес">
+                    </div>
+                </div>
+                <div class="date_time">
+                    <div class="wrapp_Box">
+                        <label for="dateBox">Дата доставки</label>
+                        <input type="date" name="dateBox" id="dateBox">
+                    </div>
+                    <div class="wrapp_Box">
+                        <label for="timeBox">Время доставки</label>
+                        <input type="time" name="timeBox" id="timeBox">
+                    </div>
+                </div>
+                <div class="party_person">
+                    <select name="party" id="partyChoose">
+                        <option selected value="Happy birthday">День рождения</option>
+                        <option value="Weeding">Свадьба</option>
+                        <option value="Corp">Корпоратив</option>
+                        <option value="Delivery">Доставка фуршета</option>
+                        <option value="Dinner">Ужин</option>
+                        <option value="Coctail">Коктейль</option>
+                        <option value="Other">Прочее</option>
+                    </select>
+                    <div class="person_add">
+                        <label for="personBox">Кол-во персон</label>
+                        <input type="button"id="minusBtn" value="-"></input>
+                        <input type="number" name="personBox" id="personBox" min="1" max="1000">
+                        <input type="button" id="plusBtn" value="+"></input>
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
+    <!--footer-->
     <footer class="footer">
         <div class="content">
             <img src="images/logo_mobile.svg" alt="logo_mobile" width="70">
@@ -181,6 +243,7 @@
             </div>
         </div>
     </footer>
+    <!--scripts-->
     <script src="js/app.js"></script>
 </body>
 </html>

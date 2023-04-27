@@ -543,6 +543,56 @@ main {
             }
         }
     }
+    .call_back {
+        width: 100%;
+        margin-top: 20px;
+        h2, p {
+            text-align: center;
+        }
+        p {
+            margin-top: 20px;
+        }
+        .send_call_back {
+            border: 7px solid $black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 400px;
+            margin: 20px calc((100% - 900px)/2) 0;
+    
+            .name_email, .tel_adress {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                input {
+                    border: none;
+                    border-bottom: 1px solid $black;
+                    padding: 15px;
+                    font-size: 16px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .date_time {
+                display: flex;
+                justify-content: space-around;
+                border: none;
+                padding: 15px;
+                font-size: 16px;
+            }
+            .party_person {
+                display: flex;
+                justify-content: space-around;
+                border: none;
+            }
+            .wrapp_Box {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 }
 /*FOOTER - FOOD SERVICE*/
 .footer {

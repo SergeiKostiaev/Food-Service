@@ -549,6 +549,55 @@ main .thrid_block .left_part img, main .thrid_block .left_part2 img {
   width: 95%;
   min-width: 300px;
 }
+main .call_back {
+  width: 100%;
+  margin-top: 20px;
+}
+main .call_back h2, main .call_back p {
+  text-align: center;
+}
+main .call_back p {
+  margin-top: 20px;
+}
+main .call_back .send_call_back {
+  border: 7px solid rgb(0, 0, 0);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  margin: 20px calc((100% - 900px) / 2) 0;
+}
+main .call_back .send_call_back .name_email, main .call_back .send_call_back .tel_adress {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .call_back .send_call_back .name_email input, main .call_back .send_call_back .tel_adress input {
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: 15px;
+  font-size: 16px;
+}
+main .call_back .send_call_back .name_email input:focus, main .call_back .send_call_back .tel_adress input:focus {
+  outline: none;
+}
+main .call_back .send_call_back .date_time {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+}
+main .call_back .send_call_back .party_person {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+}
+main .call_back .send_call_back .wrapp_Box {
+  display: flex;
+  flex-direction: column;
+}
 
 /*FOOTER - FOOD SERVICE*/
 .footer {
