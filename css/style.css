@@ -81,6 +81,10 @@ a {
   padding: 0px calc((100% - 1140px) / 2) 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*Header - food service*/
 header > .content {
   padding: 5px calc((100% - 1140px) / 2);
@@ -135,6 +139,9 @@ aside {
   color: rgb(255, 105, 87);
   transition: all 0.4s;
   fill: rgb(255, 105, 87);
+}
+.header_two > .content .header_two_nav #nav .nav_link:focus {
+  color: rgb(255, 105, 87);
 }
 .header_two > .content .header_two_nav #nav .dropdown {
   float: left;
@@ -387,13 +394,14 @@ main .katering .wrapper .first {
 main .katering .wrapper .first a {
   font-family: "Muller";
   font-weight: 600;
+  font-size: 18px;
   position: absolute;
   left: 35%;
   top: 45%;
   background: rgba(0, 0, 0, 0.7);
   border: 1.5px solid #FFFFFF;
   color: rgb(255, 255, 255);
-  padding: 11px 44px;
+  padding: 20px 44px;
 }
 main .katering .wrapper .first a:hover {
   color: rgb(255, 105, 87);
@@ -419,13 +427,14 @@ main .katering .wrapper .second .block_weeding {
 main .katering .wrapper .second .block_weeding a {
   font-family: "Muller";
   font-weight: 600;
+  font-size: 18px;
   position: absolute;
   left: 30%;
   top: 40%;
   background: rgba(0, 0, 0, 0.7);
   border: 1.5px solid #FFFFFF;
   color: rgb(255, 255, 255);
-  padding: 11px 44px;
+  padding: 20px 44px;
 }
 main .katering .wrapper .second .block_weeding a:hover {
   color: rgb(255, 105, 87);
@@ -439,13 +448,14 @@ main .katering .wrapper .second .block_party {
 main .katering .wrapper .second .block_party a {
   font-family: "Muller";
   font-weight: 600;
+  font-size: 18px;
   position: absolute;
   left: 30%;
   top: 40%;
   background: rgba(0, 0, 0, 0.7);
   border: 1.5px solid #FFFFFF;
   color: rgb(255, 255, 255);
-  padding: 11px 44px;
+  padding: 20px 44px;
 }
 main .katering .wrapper .second .block_party a:hover {
   color: rgb(255, 105, 87);
@@ -510,6 +520,8 @@ main .menu_list .buffet p:hover, main .menu_list .kids p:hover, main .menu_list 
   background-color: rgba(0, 0, 0, 0.5);
 }
 main .more {
+  width: 20%;
+  min-width: 222px;
   display: block;
   border: 3px solid #FD7043;
   background: none;
@@ -690,4 +702,61 @@ main .call_back .send_call_back .wrapp_Box {
 .main_privacy .title_privacy h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+/*all category*/
+.main_category {
+  display: block;
+  width: 100%;
+}
+.main_category .main_category_section {
+  width: 100%;
+  background-image: url(/images/large-45.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1140px;
+  height: 430px;
+}
+.main_category .title_category {
+  width: 100%;
+}
+.main_category .title_category h2 {
+  margin: 20px 0 20px 0;
+}
+.main_category .title_category .nav_category {
+  margin-bottom: 20px !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #000;
+}
+.main_category .title_category .nav_category .first_nav {
+  display: block;
+  padding: 5px 10px 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.main_category .title_category .nav_category .first_nav:hover {
+  transition: all 0.4s;
+  color: rgb(255, 105, 87);
+}
+.main_category .title_category .nav_category .first_nav .tab_active {
+  display: block;
+}
+.main_category .title_category .catolog_page > .info {
+  display: none;
+}
+.main_category .title_category .catolog_page > .content_active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

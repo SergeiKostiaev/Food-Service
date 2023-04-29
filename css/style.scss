@@ -73,6 +73,9 @@ a {
 .content {
     padding: 0px calc((100% - 1140px)/2) 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 /*Header - food service*/
 
 header>.content {
@@ -122,6 +125,9 @@ aside {
                     transition: all 0.4s;
                     fill: $border;
                 }
+            }
+            .nav_link:focus {
+                color: $border;
             }
             /*Submenu*/
             .dropdown {
@@ -378,13 +384,14 @@ main {
                 a {
                     font-family: 'Muller';
                     font-weight: 600;
+                    font-size: 18px;
                     position: absolute;
                     left: 35%;
                     top: 45%;
                     background: rgba(0, 0, 0, 0.7);
                     border: 1.5px solid #FFFFFF;
                     color: $white;
-                    padding: 11px 44px;
+                    padding: 20px 44px;
                     &:hover {
                         color: $border;
                         transition: all 0.4s;
@@ -409,13 +416,14 @@ main {
                     a {
                         font-family: 'Muller';
                         font-weight: 600;
+                        font-size: 18px;
                         position: absolute;
                         left: 30%;
                         top: 40%;
                         background: rgba(0, 0, 0, 0.7);
                         border: 1.5px solid #FFFFFF;
                         color: $white;
-                        padding: 11px 44px;
+                        padding: 20px 44px;
                         &:hover {
                             color: $border;
                             transition: all 0.4s;
@@ -429,13 +437,14 @@ main {
                     a {
                         font-family: 'Muller';
                         font-weight: 600;
+                        font-size: 18px;
                         position: absolute;
                         left: 30%;
                         top: 40%;
                         background: rgba(0, 0, 0, 0.7);
                         border: 1.5px solid #FFFFFF;
                         color: $white;
-                        padding: 11px 44px;
+                        padding: 20px 44px;
                         &:hover {
                             color: $border;
                             transition: all 0.4s;
@@ -503,6 +512,8 @@ main {
         }
     }
     .more {
+        width: 20%;
+        min-width: 222px;
         display: block;
         border: 3px solid #FD7043;
         background: none;
@@ -684,5 +695,64 @@ main {
             text-align: center;
             margin-bottom: 20px;
         }
+    }
+}
+
+/*all category*/
+.main_category {
+    display: block;
+    width: 100%;
+    .main_category_section {
+        width: 100%;
+        background-image: url(/images/large-45.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1140px;
+        height: 430px;   
+    }
+    .title_category {
+        width: 100%;
+
+        h2 {
+            margin: 20px 0 20px 0;
+        }
+        .nav_category {
+            margin-bottom: 20px !important;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-bottom: 1px solid #000;
+            .first_nav {
+                display: block;
+                padding: 5px 10px 15px;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 600;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                text-align: center;
+                color: $black;
+                cursor: pointer;
+                &:hover {
+                    transition: all 0.4s;
+                    color: $border;
+                }
+                .tab_active {
+                    display: block;
+                }
+            }
+        }
+        .catolog_page > .info {
+            display: none;
+        }
+        .catolog_page > .content_active {
+            display: block;
+        }
+
     }
 }
