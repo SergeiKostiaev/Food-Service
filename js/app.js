@@ -7,6 +7,9 @@ const btnActive = document.getElementsByClassName("nav_link")
  
 /*Все функции*/
 
+/*Управление языком*/
+
+/*Управление вкладками*/
 for (let i = 0; i < tabs.length; i++) {
 	tabs[i].addEventListener("click", ( event ) => {
  
