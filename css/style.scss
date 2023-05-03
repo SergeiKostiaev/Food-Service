@@ -4,33 +4,14 @@
 /*********************************************************************************************************************************************************/
 /*********************************************************************************************************************************************************/
 /*Fonts connect - food service*/
-@font-face {
-    font-family: 'Muller Black';
-    src: url(/fonts/MullerBlack.ttf);
-}
-@font-face {
-    font-family: 'Muller BlackItalic';
-    src: url(/fonts/MullerBlackItalic.ttf);
-}
+
 @font-face {
     font-family: 'Muller Bold';
     src: url(/fonts/MullerBold.ttf);
 }
 @font-face {
-    font-family: 'Muller BoldItalic';
-    src: url(/fonts/MullerBoldItalic.ttf);
-}
-@font-face {
     font-family: 'Muller Regular';
     src: url(/fonts/MullerRegular.ttf);
-}
-@font-face {
-    font-family: 'Muller BoldItalic';
-    src: url(/fonts/MullerBoldItalic.ttf);
-}
-@font-face {
-    font-family: 'Muller Hairline';
-    src: url(/fonts/MullerHairline.ttf);
 }
 @font-face {
     font-family: 'Muller Light';
@@ -63,7 +44,7 @@ $white: rgb(255, 255, 255);
     margin: 0;
 }
 body {
-    font-family: 'Muller';
+    font-family: 'Muller Light';
 }
 a {
     text-decoration: none;
@@ -246,6 +227,7 @@ main {
                 animation-timing-function: linear;
             }    
             h1 {
+                font-family: 'Muller Bold';
                 display: flex;
                 flex-direction: column;
                 padding-top: 300px;
@@ -253,11 +235,13 @@ main {
                 font-size: 40px;
             }
             .title_after {
+                font-family: 'Muller Light';
                 display: flex;
                 flex-direction: column;
                 color: $white;
                 font-size: 18px;
                 margin-top: 25px;
+                line-height: 1.5;
             }
             .form_name_tel {
                 display: flex;
@@ -382,7 +366,7 @@ main {
             .first {
                 position: relative;
                 a {
-                    font-family: 'Muller';
+                    font-family: 'Muller Bold';
                     font-weight: 600;
                     font-size: 18px;
                     position: absolute;
@@ -414,7 +398,7 @@ main {
                 .block_weeding {
                     position: relative;
                     a {
-                        font-family: 'Muller';
+                        font-family: 'Muller Bold';
                         font-weight: 600;
                         font-size: 18px;
                         position: absolute;
@@ -435,7 +419,7 @@ main {
                 .block_party {
                     position: relative;
                     a {
-                        font-family: 'Muller';
+                        font-family: 'Muller Bold';
                         font-weight: 600;
                         font-size: 18px;
                         position: absolute;
