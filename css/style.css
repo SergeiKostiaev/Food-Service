@@ -727,8 +727,6 @@ main .call_back .send_call_back .wrapp_Box {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   text-align: center;
   color: rgb(0, 0, 0);
@@ -736,7 +734,7 @@ main .call_back .send_call_back .wrapp_Box {
 }
 .main_category .title_category .nav_category .first_nav:hover {
   transition: all 0.4s;
-  color: rgb(255, 105, 87);
+  color: #FD7043;
 }
 .main_category .title_category .nav_category .first_nav .tab_active {
   display: block;

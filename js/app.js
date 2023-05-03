@@ -3,7 +3,7 @@
 /************** */
 const tabs = document.querySelectorAll(".first_nav");
 const contents = document.querySelectorAll(".info");
-const btnActive = document.getElementsByClassName("nav_link")
+const btnActive = document.getElementsByClassName("nav_link");
  
 /*Все функции*/
 

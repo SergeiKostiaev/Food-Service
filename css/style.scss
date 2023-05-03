@@ -720,16 +720,15 @@ main {
                 font-size: 16px;
                 text-transform: uppercase;
                 font-weight: 600;
-                justify-content: center;
-                align-items: center;
                 height: 100%;
                 text-align: center;
                 color: $black;
                 cursor: pointer;
                 &:hover {
                     transition: all 0.4s;
-                    color: $border;
+                    color: #FD7043;
                 }
+                
                 .tab_active {
                     display: block;
                 }
