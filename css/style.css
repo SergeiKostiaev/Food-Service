@@ -743,6 +743,44 @@ main .call_back .send_call_back .wrapp_Box {
 }
 .main_category .title_category .catolog_page > .info {
   display: none;
+  width: 100%;
+}
+.main_category .title_category .catolog_page > .info .container_menu_tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main_category .title_category .catolog_page > .info .container_menu_tab .tab {
+  width: 360px;
+  margin-bottom: 20px;
+}
+.main_category .title_category .catolog_page > .info .container_menu_tab .tab .buttons_cart {
+  display: flex;
+  justify-content: space-around;
+}
+.main_category .title_category .catolog_page > .info .container_menu_tab .tab .buttons_cart .btn_cart {
+  color: #ff6957;
+  border: 3px solid #ff6957;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  height: 50px;
+  padding: 0 25px;
+  display: block;
+  cursor: pointer;
+}
+.main_category .title_category .catolog_page > .info .container_menu_tab .tab .buttons_cart .more_info {
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+  background-color: transparent;
+  font-family: "Muller Bold";
+  font-weight: 600;
+  font-size: 14px;
+  height: 50px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 .main_category .title_category .catolog_page > .content_active {
   display: block;
