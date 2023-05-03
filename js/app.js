@@ -4,10 +4,25 @@
 const tabs = document.querySelectorAll(".first_nav");
 const contents = document.querySelectorAll(".info");
 const btnActive = document.getElementsByClassName("nav_link");
+
+const search = document.querySelector('#searchInpt');
+const allLinks = document.querySelectorAll('.tab');
+const notAll = document.querySelector(".not")
  
 /*Все функции*/
+function SearchFunc() {
+	onkeyup = function (event) {
+	    const regex = new RegExp(event.target.value.toLowerCase());
+	    allLinks.forEach(element => {
+	        if (regex.test(element.textContent.toLowerCase())) {
+	            element.style.display = '';
+	        } else {
+	            element.style.display = 'none';
+	        }
+	    })
+	}
+}
 
-/*Управление языком*/
 
 /*Управление вкладками*/
 for (let i = 0; i < tabs.length; i++) {
@@ -31,7 +46,6 @@ for (let i = 0; i < tabs.length; i++) {
 	});
 }
 
-
 function myFunction() {
     let x = document.getElementById("nav");
     if (x.className === "nav") {
@@ -40,3 +54,6 @@ function myFunction() {
         x.className = "nav";
     }
 }
+
+
+

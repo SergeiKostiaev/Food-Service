@@ -800,7 +800,44 @@ main {
         .catolog_page > .content_active {
             display: block;
         }
-
+        .form_icon {
+            background: none;
+            border: none;
+        }
+        .filter_container {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 400px;
+            border: 1px solid $blackOp;
+            padding: 9px 15px;
+            position: relative;
+            &::before {
+                content: "";
+                background-image: url(../images/icons8-search.svg);
+                background-position: right;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 0;
+                top: 5px;
+                width: 100%;
+                height: 100%;
+            }
+            .search {
+                width: 90%;
+                position: relative;
+                z-index: 5;
+                background: none;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+            
+        }
+        .not {
+            display: none;
+        }
     }
     
 }
