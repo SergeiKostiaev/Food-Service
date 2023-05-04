@@ -8,8 +8,19 @@ const btnActive = document.getElementsByClassName("nav_link");
 const search = document.querySelector('#searchInpt');
 const allLinks = document.querySelectorAll('.tab');
 const notAll = document.querySelector(".not")
+
+const regBtn = document.getElementById("regBtn");
+const formBox = document.getElementsByClassName('formBox');
+const authBtn = document.getElementById("authBtn");
  
 /*Все функции*/
+function changeForm() {
+	formBox.classList.remove('active');
+	this.closest('.formBox').classList.add('active');
+}
+  
+document.getElementsByClassName('form1').onclick = document.getElementsByClassName('form2').onclick = changeForm;
+
 function SearchFunc() {
 	onkeyup = function (event) {
 	    const regex = new RegExp(event.target.value.toLowerCase());

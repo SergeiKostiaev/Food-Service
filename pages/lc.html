@@ -47,8 +47,47 @@
             </nav>
         </div>
     </aside>
-    <main class="main_corp">
+    <main class="main_lc content">
+        <section class="lc_box">
+            <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+            <div class="container_lc">
+                <div class="auth">
+                    <!--Форма авторизации-->
+                    <form action="vendor/signin.php" method="post" class="formBox form1">
+                        <label>Логин</label>
+                        <input type="text" name="login" id="loginInpt" placeholder="Введите свой Login">
+                        <label>Пароль</label>
+                        <input type="password" name="password" id="passwordInpt" placeholder="Введите свой Password">
+                        <button type="submit">Войти</button>
+                        <p>
+                            У Вас нет аккаунта? - <a id="regBtn">Зарегистрируйтесь</a>
+                        </p>
+                    </form>
+                    <!--Форма регистрации-->
+                    <form action="vendor/signup.php" method="post" enctype="multipart/form-data" class="formBox form2">
+                        <label>ФИО</label>
+                        <input type="text" name="full_name" id="NameInpt" placeholder="Введите свое полное имя">
+                        <label>Логин</label>
+                        <input type="text" name="login" id="loginInpt" placeholder="Введите свой Login">
 
+                        <label>E-mail</label>
+                        <input type="email" name="email" id="emailInpt" placeholder="Введите свой E-mail">
+
+                        <label>Изоображение профиля</label>
+                        <input type="file" name="avatar" id="imageInpt">
+
+                        <label>Пароль</label>
+                        <input type="password" name="password" id="passwordInpt" placeholder="Введите свой Password">
+                        <label>Подтверждение пароля</label>
+                        <input type="password" name="password_confirm" id="passwordInpt" placeholder="Введите свой Password еще раз">
+                        <button type="submit">Зарегистрироваться</button>
+                        <p>
+                            У Вас уже есть аккаунт? - <a id="authBtn">Авторизация</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer" id="footer_contact">
         <div class="content">

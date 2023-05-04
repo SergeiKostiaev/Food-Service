@@ -895,4 +895,65 @@ main .call_back .send_call_back .wrapp_Box {
   background-repeat: no-repeat;
   background-size: 1140px;
   height: 430px;
+}
+
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*LC - FOOD SERVICE**************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************/
+.lc_box {
+  margin-top: 80px;
+}
+.lc_box .container_lc > .auth {
+  width: 100%;
+  padding: 40px;
+  display: block;
+  margin: 0 auto;
+}
+.lc_box .container_lc > .auth .formBox {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.lc_box .container_lc > .auth .formBox input {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.lc_box .container_lc > .auth .formBox input:focus {
+  outline: none;
+}
+.lc_box .container_lc > .auth .formBox button {
+  color: #ff6957;
+  border: 3px solid #ff6957;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  width: 200px;
+  height: 50px;
+  padding: 0 10px;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.lc_box .container_lc > .auth .formBox button:hover {
+  transition: all 0.4s;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+}
+.lc_box .container_lc > .auth .formBox p > a {
+  color: rgb(255, 105, 87);
+}
+.lc_box .container_lc > .auth .formBox p > a:hover {
+  color: rgb(0, 0, 0);
+  transition: all 0.4s;
+}
+.lc_box .container_lc > .auth .active {
+  display: block;
+}
+.lc_box .container_lc > .auth .form2 {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
