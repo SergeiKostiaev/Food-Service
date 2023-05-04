@@ -68,7 +68,6 @@ function myFunction() {
     }
 }
 
-toformReg.onclick = toformEntr.onclick = changeForm;
 
 
 

@@ -46,7 +46,7 @@
                         <!--SubMenu-->
                     </div>
                     <a class="nav_link" href="pages/allCategory.html">Доставка фуршета</a>
-                    <a class="nav_link" href="#">Услуги</a>
+                    <a class="nav_link" href="pages/other.html">Услуги</a>
                     <a class="nav_link" href="pages/lc.html">Личный кабинет</a>
                     <a class="nav_link" href="#">Портфолио</a>
                     <a class="nav_link" href="#footer_contact">Контакты</a>
@@ -165,31 +165,31 @@
                 <div class="name_email">
                     <div class="wrapp_Box">
                         <label for="nameBox">Ваше имя</label>
-                        <input type="text" name="nameBox" id="nameBox" placeholder="Имя">
+                        <input type="text" name="nameBox" id="nameBox" placeholder="Имя" required>
                     </div>
                     <div class="wrapp_Box">
                         <label for="emailBox">Ваше e-mail</label>
-                        <input type="email" name="emailBox" id="emailBox" placeholder="E-mail">
+                        <input type="email" name="emailBox" id="emailBox" placeholder="E-mail" required>
                     </div>
                 </div>
                 <div class="tel_adress">
                     <div class="wrapp_Box">
                         <label for="telBox">Ваше Телефон</label>
-                        <input type="tel" name="telBox" id="telBox" placeholder="+7 (999) 999 99 99">
+                        <input type="tel" name="telBox" id="telBox" placeholder="+7 (999) 999 99 99" required>
                     </div>
                     <div class="wrapp_Box">
                         <label for="adressBox">Ваше адрес</label>
-                        <input type="text" name="adressBox" id="adressBox" placeholder="Адрес">
+                        <input type="text" name="adressBox" id="adressBox" placeholder="Адрес" required>
                     </div>
                 </div>
                 <div class="date_time">
                     <div class="wrapp_Box">
                         <label for="dateBox">Дата доставки</label>
-                        <input type="date" name="dateBox" id="dateBox">
+                        <input type="date" name="dateBox" id="dateBox" required>
                     </div>
                     <div class="wrapp_Box">
                         <label for="timeBox">Время доставки</label>
-                        <input type="time" name="timeBox" id="timeBox">
+                        <input type="time" name="timeBox" id="timeBox" required>
                     </div>
                 </div>
                 <div class="party_person">
@@ -209,6 +209,7 @@
                         <input type="button" id="plusBtn" value="+"></input>
                     </div>
                 </div>
+                <button class="sendBtn" type="submit">Отправить</button>
             </form>
         </section>
     </main>
