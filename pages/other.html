@@ -61,23 +61,77 @@
                         <img src="../images/other-149.jpg" alt="other-149">
                         <h3>ВЫЕЗДНОЙ БАР</h3>
                         <p class="about_eat">Мы поможем организовать спектр барных удовольствий и развлечений для вашего мероприятия. Ароматы лайма, мяты и душистых сиропов, звон кубиков льда, замысловатые коктейли и взрывоопасные шоты, бармен-шоу, пирамиды из бокалов принесут много позитивных эмоций для ваших гостей.</p>
-                        <button type="button" class="order_btn">ЗАКАЗАТЬ</button>
+                        <a type="button" class="order_btn" href="#scrol_form">ЗАКАЗАТЬ</a>
                     </div>
 
                     <div class="tab_other">
                         <img src="../images/other-150.jpg" alt="other-150">
                         <h3>КОФЕ-БРЕЙК</h3>
                         <p class="about_eat">Мы поможем организовать кофе-брейк, подав вашим гостям кофе, чай, безалкогольные напитки, а также выпечку, сэндвичи и десерты. Кофе-брейк во время перерыва на тренинге, презентации или переговорах – прекрасная возможность пообщаться в неформальной обстановке.</p>
-                        <button type="button" class="order_btn">ЗАКАЗАТЬ</button>
+                        <a type="button" class="order_btn" href="#scrol_form">ЗАКАЗАТЬ</a>
                     </div>
 
                     <div class="tab_other">
                         <img src="../images/other-151.jpg" alt="other-151">
                         <h3>АНИМАЦИОННАЯ СТАНЦИЯ</h3>
                         <p class="about_eat">Мы поможем организовать демонстрационная станцию, которая украсит программу вашего мероприятия. Наши повара приготовят изысканные блюда, по вашему пожеланию, на глазах у ваших гостей, которые смогут воочию увидеть технику приготовления в стиле шоу.</p>
-                        <button type="button" class="order_btn">ЗАКАЗАТЬ</button>
+                        <a type="button" class="order_btn" href="#scrol_form">ЗАКАЗАТЬ</a>
                     </div>
                 </div>
+            </section>
+            <section class="call_back content" id="scrol_form">
+                <h2>ОФОРМИТЕ ЗАЯВКУ НА КЕЙТЕРИНГ</h2>
+                <p>Мы формируем кейтеринг меню на фуршет или банкет по вашему запросу и желаемому бюджету</p>
+                <form action="" method="post" class="send_call_back">
+                    <div class="name_email">
+                        <div class="wrapp_Box">
+                            <label for="nameBox">Ваше имя</label>
+                            <input type="text" name="nameBox" id="nameBox" placeholder="Имя" required>
+                        </div>
+                        <div class="wrapp_Box">
+                            <label for="emailBox">Ваше e-mail</label>
+                            <input type="email" name="emailBox" id="emailBox" placeholder="E-mail" required>
+                        </div>
+                    </div>
+                    <div class="tel_adress">
+                        <div class="wrapp_Box">
+                            <label for="telBox">Ваше Телефон</label>
+                            <input type="tel" name="telBox" id="telBox" placeholder="+7 (999) 999 99 99" required>
+                        </div>
+                        <div class="wrapp_Box">
+                            <label for="adressBox">Ваше адрес</label>
+                            <input type="text" name="adressBox" id="adressBox" placeholder="Адрес" required>
+                        </div>
+                    </div>
+                    <div class="date_time">
+                        <div class="wrapp_Box">
+                            <label for="dateBox">Дата доставки</label>
+                            <input type="date" name="dateBox" id="dateBox" required>
+                        </div>
+                        <div class="wrapp_Box">
+                            <label for="timeBox">Время доставки</label>
+                            <input type="time" name="timeBox" id="timeBox" required>
+                        </div>
+                    </div>
+                    <div class="party_person">
+                        <select name="party" id="partyChoose">
+                            <option selected value="Happy birthday">День рождения</option>
+                            <option value="Weeding">Свадьба</option>
+                            <option value="Corp">Корпоратив</option>
+                            <option value="Delivery">Доставка фуршета</option>
+                            <option value="Dinner">Ужин</option>
+                            <option value="Coctail">Коктейль</option>
+                            <option value="Other">Прочее</option>
+                        </select>
+                        <div class="person_add">
+                            <label for="personBox">Кол-во персон</label>
+                            <input type="button"id="minusBtn" value="-"></input>
+                            <input type="number" name="personBox" id="personBox" min="1" max="1000">
+                            <input type="button" id="plusBtn" value="+"></input>
+                        </div>
+                    </div>
+                    <button class="sendBtn" type="submit">Отправить</button>
+                </form>
             </section>
         </div>
         
