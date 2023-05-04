@@ -22,9 +22,9 @@ const notAll = document.querySelector(".not")
 function changeForm() {
 	document.querySelector('.form.active').classList.remove('active');
 	this.closest('.form').classList.add('active');
-  }
+}
   
-  form1.onclick = form2.onclick = changeForm;
+form1.onclick = form2.onclick = changeForm;
 
 
 
