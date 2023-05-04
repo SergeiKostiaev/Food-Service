@@ -19,17 +19,12 @@ const notAll = document.querySelector(".not")
     const toformEntr = document.querySelector('#form2');
  
 /*Все функции*/ 
+/*Функция смены табов формы регистрации */
 function changeForm() {
 	document.querySelector('.form.active').classList.remove('active');
-	this.closest('.form').classList.add('active');
-
-	
+	this.closest('.form').classList.add('active');	
 }
-  
-
-
-
-
+/*Функция поиска товаров*/
 function SearchFunc() {
 	onkeyup = function (event) {
 	    const regex = new RegExp(event.target.value.toLowerCase());
@@ -42,8 +37,6 @@ function SearchFunc() {
 	    })
 	}
 }
-
-
 /*Управление вкладками*/
 for (let i = 0; i < tabs.length; i++) {
 	tabs[i].addEventListener("click", ( event ) => {
@@ -65,7 +58,7 @@ for (let i = 0; i < tabs.length; i++) {
  
 	});
 }
-
+/*Функция раскрытия саб-меню */
 function myFunction() {
     let x = document.getElementById("nav");
     if (x.className === "nav") {

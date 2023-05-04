@@ -916,9 +916,6 @@ main .call_back .send_call_back .wrapp_Box {
   margin: 82px auto 0 auto;
   position: relative;
 }
-.lc_box .form-wrap * {
-  box-sizing: border-box;
-}
 .lc_box .form-wrap form {
   background: #fff;
   border-radius: 0 0 20px 20px;
@@ -941,7 +938,7 @@ main .call_back .send_call_back .wrapp_Box {
 .lc_box form {
   display: none;
   flex-direction: column;
-  gap: 1em;
+  gap: 16px;
 }
 .lc_box .form.active form {
   display: flex;
