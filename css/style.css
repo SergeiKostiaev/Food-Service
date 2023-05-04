@@ -911,20 +911,60 @@ main .call_back .send_call_back .wrapp_Box {
   display: block;
   margin: 0 auto;
 }
-.lc_box .container_lc > .auth .formBox {
-  width: 350px;
-  display: flex;
+.lc_box .form-wrap {
+  width: 450px;
+  margin: 82px auto 0 auto;
+  position: relative;
+}
+.lc_box .form-wrap * {
+  box-sizing: border-box;
+}
+.lc_box .form-wrap form {
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 2em;
+}
+.lc_box .form .tab {
+  position: absolute;
+  bottom: 100%;
+  width: 50%;
+  text-align: center;
+  padding: 1em 0;
+  cursor: pointer;
+  color: #aaa;
+}
+.lc_box .form.active .tab {
+  border-radius: 20px 20px 0 0;
+  background: white;
+  color: black;
+}
+.lc_box form {
+  display: none;
   flex-direction: column;
+  gap: 1em;
+}
+.lc_box .form.active form {
+  display: flex;
+}
+.lc_box #form1.active form {
+  border-top-right-radius: 20px;
+}
+.lc_box #form2.active form {
+  border-top-left-radius: 20px;
+}
+.lc_box #form1 .tab {
+  left: 0;
+}
+.lc_box #form2 .tab {
+  left: 50%;
+}
+.lc_box button {
+  display: block;
   margin: 0 auto;
+  padding: 0.5em 2em;
+  margin-top: 1em;
 }
-.lc_box .container_lc > .auth .formBox input {
-  padding: 10px;
-  margin-bottom: 20px;
-}
-.lc_box .container_lc > .auth .formBox input:focus {
-  outline: none;
-}
-.lc_box .container_lc > .auth .formBox button {
+.lc_box .sendBtn {
   color: #ff6957;
   border: 3px solid #ff6957;
   background-color: transparent;
@@ -932,28 +972,21 @@ main .call_back .send_call_back .wrapp_Box {
   font-size: 14px;
   width: 200px;
   height: 50px;
-  padding: 0 10px;
+  padding: 0 15px;
   display: block;
   box-sizing: border-box;
   cursor: pointer;
-  margin: 0 auto;
-  margin-bottom: 20px;
 }
-.lc_box .container_lc > .auth .formBox button:hover {
+.lc_box .sendBtn:hover {
   transition: all 0.4s;
   color: rgb(0, 0, 0);
   border: 3px solid rgb(0, 0, 0);
 }
-.lc_box .container_lc > .auth .formBox p > a {
-  color: rgb(255, 105, 87);
+.lc_box input {
+  width: 100%;
+  padding: 5px;
 }
-.lc_box .container_lc > .auth .formBox p > a:hover {
-  color: rgb(0, 0, 0);
-  transition: all 0.4s;
-}
-.lc_box .container_lc > .auth .active {
+.lc_box label {
   display: block;
-}
-.lc_box .container_lc > .auth .form2 {
-  display: none;
+  margin-bottom: 0.4em;
 }/*# sourceMappingURL=style.css.map */

@@ -9,17 +9,24 @@ const search = document.querySelector('#searchInpt');
 const allLinks = document.querySelectorAll('.tab');
 const notAll = document.querySelector(".not")
 
-const regBtn = document.getElementById("regBtn");
-const formBox = document.getElementsByClassName('formBox');
-const authBtn = document.getElementById("authBtn");
+//Переменные
+    //формы
+    const form_a = document.querySelector('#form-entr');
+    const form_b = document.querySelector('#form');
+
+    //авторизация и регистрация
+    const toformReg = document.querySelector('#form1');
+    const toformEntr = document.querySelector('#form2');
  
-/*Все функции*/
+/*Все функции*/ 
 function changeForm() {
-	formBox.classList.remove('active');
-	this.closest('.formBox').classList.add('active');
-}
+	document.querySelector('.form.active').classList.remove('active');
+	this.closest('.form').classList.add('active');
+  }
   
-document.getElementsByClassName('form1').onclick = document.getElementsByClassName('form2').onclick = changeForm;
+  form1.onclick = form2.onclick = changeForm;
+
+
 
 function SearchFunc() {
 	onkeyup = function (event) {

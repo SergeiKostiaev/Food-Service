@@ -51,41 +51,51 @@
         <section class="lc_box">
             <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
             <div class="container_lc">
-                <div class="auth">
-                    <!--Форма авторизации-->
-                    <form action="vendor/signin.php" method="post" class="formBox form1">
-                        <label>Логин</label>
-                        <input type="text" name="login" id="loginInpt" placeholder="Введите свой Login">
-                        <label>Пароль</label>
-                        <input type="password" name="password" id="passwordInpt" placeholder="Введите свой Password">
-                        <button type="submit">Войти</button>
-                        <p>
-                            У Вас нет аккаунта? - <a id="regBtn">Зарегистрируйтесь</a>
-                        </p>
-                    </form>
-                    <!--Форма регистрации-->
-                    <form action="vendor/signup.php" method="post" enctype="multipart/form-data" class="formBox form2">
-                        <label>ФИО</label>
-                        <input type="text" name="full_name" id="NameInpt" placeholder="Введите свое полное имя">
-                        <label>Логин</label>
-                        <input type="text" name="login" id="loginInpt" placeholder="Введите свой Login">
-
-                        <label>E-mail</label>
-                        <input type="email" name="email" id="emailInpt" placeholder="Введите свой E-mail">
-
-                        <label>Изоображение профиля</label>
-                        <input type="file" name="avatar" id="imageInpt">
-
-                        <label>Пароль</label>
-                        <input type="password" name="password" id="passwordInpt" placeholder="Введите свой Password">
-                        <label>Подтверждение пароля</label>
-                        <input type="password" name="password_confirm" id="passwordInpt" placeholder="Введите свой Password еще раз">
-                        <button type="submit">Зарегистрироваться</button>
-                        <p>
-                            У Вас уже есть аккаунт? - <a id="authBtn">Авторизация</a>
-                        </p>
-                    </form>
-                </div>
+                <div class="form-wrap">
+                    <!--Auth-->
+                    <div class="form active" id="form1">
+                      <div class="tab">Авторизация</div>
+                      <form>
+                        <div class="field">
+                            <label>Логин</label>
+                            <input type="text" name="login" id="loginInpt" placeholder="Login">
+                        </div>
+                        <div class="field">
+                            <label>Пароль</label>
+                            <input type="password" name="password" id="passwordInpt" placeholder="Password">
+                        </div>
+                        <button class="sendBtn" type="submit">Авторизоваться</button>
+                      </form>
+                    </div>
+                    <!--Reg-->
+                    <div class="form" id="form2">
+                      <div class="tab">Регистрация</div>
+                      <form>
+                        <div class="field">
+                            <label>ФИО</label>
+                            <input type="text" name="full_name" id="NameInpt" placeholder="Введите свое полное имя">
+                        </div>
+                        <div class="field">
+                            <label>Логин</label>
+                            <input type="text" name="login" id="loginInpt" placeholder="Введите свой Login">
+                        </div>
+                        <div class="field">
+                            <label>E-mail</label>
+                            <input type="email" name="email" id="emailInpt" placeholder="Введите свой E-mail">
+                        </div>
+                        <div class="field">
+                            <label>Пароль</label>
+                            <input type="password" name="password" id="passwordInpt" placeholder="Введите свой Password">
+                        </div>
+                        <div class="field">
+                            <label>Подтверждение пароля</label>
+                            <input type="password" name="password_confirm" id="passwordInpt" placeholder="Введите свой Password еще раз">
+                        </div>
+                        <button class="sendBtn" type="submit">Зарегистрироваться</button>
+                      </form>
+                    </div>
+                  
+                  </div>
             </div>
         </section>
     </main>
