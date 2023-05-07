@@ -9,14 +9,14 @@ const search = document.querySelector('#searchInpt');
 const allLinks = document.querySelectorAll('.tab');
 const notAll = document.querySelector(".not")
 
-//Переменные
-    //формы
-    const form_a = document.querySelector('#form-entr');
-    const form_b = document.querySelector('#form');
-
-    //авторизация и регистрация
-    const toformReg = document.querySelector('#form1');
-    const toformEntr = document.querySelector('#form2');
+let splashInput = document.querySelector(".custom-counter-input");
+ 
+//Переменные формы
+const form_a = document.querySelector('#form-entr');
+const form_b = document.querySelector('#form');
+//Переменные авторизация и регистрация
+const toformReg = document.querySelector('#form1');
+const toformEntr = document.querySelector('#form2');
  
 /*Все функции*/ 
 /*Функция смены табов формы регистрации */
@@ -69,5 +69,13 @@ function myFunction() {
 }
 
 
-
+let splashVal = parseFloat(splashInput.value);
+document.querySelector(".js-counter-input-appl__plus").onclick = function() {
+  splashInput.value = ++splashVal;
+}
+document.querySelector(".js-counter-input-appl__minus").onclick = function() {
+  if (splashVal > 1) {
+    splashInput.value = --splashVal;
+  } 
+} 
 

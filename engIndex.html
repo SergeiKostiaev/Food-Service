@@ -142,71 +142,106 @@
         <!--3 section-->
         <section class="thrid_block content">
             <h2 hidden>thrid_block</h2>
-            <div class="wrap_left_part">
-                <div class="left_part">
-                    <img src="images/small-199.jpg" alt="small-199">
-                    <img src="images/small-200.jpg" alt="small-200">
-                    <img src="images/small-201.jpg" alt="small-201">
-                </div>
-                <div class="left_part2">
-                    <img src="images/small-202.jpg" alt="small-202">
-                    <img src="images/small-203.jpg" alt="small-203">
-                    <img src="images/small-204.jpg" alt="small-204">
+            <div class="wrapp_all">
+                <div class="wrap_left_part">
+                    <div class="grid_gallary">
+                        <img src="images/small-199.jpg" alt="small-199">
+                    </div>
+                    <div class="grid_gallary">
+                        <img src="images/small-200.jpg" alt="small-200">
+                    </div>
+                    <div class="grid_gallary">
+                        <img src="images/small-201.jpg" alt="small-201">
+                    </div>
+                    <div class="grid_gallary">
+                        <img src="images/small-202.jpg" alt="small-202">
+                    </div>
+                    <div class="grid_gallary">
+                        <img src="images/small-203.jpg" alt="small-203">
+                    </div>
+                    <div class="grid_gallary">
+                        <img src="images/small-204.jpg" alt="small-204">
+                    </div>
+                    <div class="grid_gallary">
+                        <img src="images/large-205.jpg" alt="large">
+                    </div>
                 </div>
             </div>
-            <img src="images/large-205.jpg" alt="large">
         </section>
         <!--4 section-->
         <section class="call_back content">
             <h2>FEEDBACK</h2>
             <p>Food Service prepares from fresh products, maintains <br>
                 philosophy of healthy eating and conscious consumption</p>
-            <form action="" method="post" class="send_call_back">
-                <div class="name_email">
-                    <div class="wrapp_Box">
-                        <label for="nameBox">Your name</label>
-                        <input type="text" name="nameBox" id="nameBox" placeholder="Имя">
+            <form action="#" method="post">
+                <div class="custom_form">
+                    <div class="custom_border">
+                        <div class="custom_form_main">
+                            <div class="appl_input_group control_group">
+                                <label class="control_label">Your name</label>
+                                <input type="text" class="inpt_control" id="form[1]" name="form[1]" placeholder="Jhon Smith">
+                            </div>
+                            <div class="appl_input_group control_group">
+                                <label class="control_label">Your email</label>
+                                <input type="email" class="inpt_control" id="form[2]" name="form[2]" placeholder="Jhon@mail.ru">
+                            </div>
+                            <div class="appl_input_group control_group">
+                                <label class="control_label">Your phone</label>
+                                <input type="tel" class="inpt_control" id="form[3]" name="form[3]" placeholder="+7(999) 999-99-99">
+                            </div>
+                            <div class="appl_input_group control_group">
+                                <label class="control_label">Your adress</label>
+                                <input type="text" class="inpt_control" id="form[4]" name="form[4]" placeholder="Укажите адрес">
+                            </div>
+                            <div class="appl_input_group control_group">
+                                <label class="control_label">Date</label>
+                                <input type="date" class="inpt_control" id="form[5]" name="form[5]" >
+                            </div>
+                            <div class="appl_input_group control_group">
+                                <label class="control_label">Time</label>
+                                <input type="time" class="inpt_control" id="form[6]" name="form[6]" >
+                            </div>
+                            <div class="appl_input_group control_group">
+                                <label class="control_label">Event</label>
+                                <select name="form[7]" class="inpt_control">
+                                    <option value="День рождения">Birthday</option>
+                                    <option value="Свадьба">Wedding</option>
+                                    <option value="Корпоратив">Corporate</option>
+                                    <option value="Доставка Фуршета">Buffet Delivery</option>
+                                    <option value="Ужин">Dinner</option>
+                                    <option value="Коктейль">Cocktail</option>
+                                    <option value="Прочее">Other</option>
+                                </select>
+                            </div>
+                            <div class="appl_input_group control_group">
+                                <label for="form[8]" class="control_label">
+                                    <label>Number of persons</label>
+                                </label>
+                                <div class="custom_coumter_inpt_wrapp">
+                                    <span uk-icon="icon: minus; ratio: 0.8;" class="js-counter-input-appl__minus uk_icon">
+                                        <svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus">
+                                            <rect height="1" width="18" y="9" x="1"></rect>
+                                        </svg>
+                                    </span>
+                                    <input type="text" name="form[8]" id="form[8]" value="1" class="custom-counter-input">
+                                    <span uk-icon="icon: plus; ratio: 0.8;" class="js-counter-input-appl__plus uk_icon">
+                                        <svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus">
+                                            <rect height="17" width="1" y="1" x="9"></rect>
+                                            <rect height="1" width="17" y="9" x="1"></rect>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="wrapp_Box">
-                        <label for="emailBox">Your e-mail</label>
-                        <input type="email" name="emailBox" id="emailBox" placeholder="E-mail">
-                    </div>
-                </div>
-                <div class="tel_adress">
-                    <div class="wrapp_Box">
-                        <label for="telBox">Your Phone</label>
-                        <input type="tel" name="telBox" id="telBox" placeholder="+7 (999) 999 99 99">
-                    </div>
-                    <div class="wrapp_Box">
-                        <label for="adressBox">Your address</label>
-                        <input type="text" name="adressBox" id="adressBox" placeholder="Адрес">
-                    </div>
-                </div>
-                <div class="date_time">
-                    <div class="wrapp_Box">
-                        <label for="dateBox">Delivery date</label>
-                        <input type="date" name="dateBox" id="dateBox">
-                    </div>
-                    <div class="wrapp_Box">
-                        <label for="timeBox">Delivery time</label>
-                        <input type="time" name="timeBox" id="timeBox">
-                    </div>
-                </div>
-                <div class="party_person">
-                    <select name="party" id="partyChoose">
-                        <option selected value="Happy birthday">Birthday</option>
-                        <option value="Weeding">Wedding</option>
-                        <option value="Corp">Corporate</option>
-                        <option value="Delivery">Buffet delivery</option>
-                        <option value="Dinner">Dinner</option>
-                        <option value="Coctail">Cocktail</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <div class="person_add">
-                        <label for="personBox">Кол-во персон</label>
-                        <input type="button"id="minusBtn" value="-"></input>
-                        <input type="number" name="personBox" id="personBox" min="1" max="1000">
-                        <input type="button" id="plusBtn" value="+"></input>
+                    <div class="custom_appl_input">
+                        <div class="fw-accept fw-checkbox">
+                            <input type="checkbox" class="js_accept" id="accept-form5_5603">
+                            <label for="accept">
+                                <a href="pages/privacy.html" class="fw-link-bbs">I confirm that I agree with the terms of use of the site and the processing of personal data</a>
+                            </label>
+                            <input type="button" value="SEND" class="fw-btn">
+                        </div>
                     </div>
                 </div>
             </form>

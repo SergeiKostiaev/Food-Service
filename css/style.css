@@ -736,6 +736,12 @@ main .call_back .custom_form .fw-btn {
   cursor: pointer;
   margin: 20px auto;
 }
+main .call_back .custom_form .fw-btn:hover {
+  color: rgb(0, 0, 0);
+  transition: all 0.4s;
+  cursor: pointer;
+  border-color: rgb(0, 0, 0);
+}
 
 /*FOOTER - FOOD SERVICE*/
 .footer {
